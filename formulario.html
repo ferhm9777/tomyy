@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+  <meta charset="UTF-8">
+  <title>TOMY</title>
+<link rel="icon" href="imagenes/cereza.png">
+  <link rel="stylesheet" href="css/formulario.css">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+   integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+  <header>
+      <div class=" navbar-fixed">
+          <nav class="hoverable #ffcc80 orange lighten-3">
+         
+             <div class="nav-wrapper">
+                 <a href="#" class="brand-logo right"><img src="imagenes/TOMY.png" widht="200" height="55"></a>
+                 <a href="#" data-target="menu-responsive" class="sidenav-trigger"><i class="material-icons">menu</i></a> 
+               <ul id="nav-mobile" class="left hide-on-med-and-down">
+                 <li><a href="Index.html"><i class="material-icons left">home</i>Inicio</a></li>
+                 <li><a href="pasteles.html"><i class="material-icons left">cake</i>Pasteles</a></li>
+                 <li><a href="postres.html"><i class="material-icons left">card_giftcard</i>Postres</a></li>
+                 <li><a href="formulario.html"><i class="material-icons left">contact_mail</i>Contacto</a></li> 
+               </ul>
+             </div>
+             </div>
+           </nav>
+             
+             <main>
+          
+               
+               <ul class="sidenav #ffcc80 orange lighten-3" id="menu-responsive"> 
+               <div class="logo logo_small">TOMY </div>
+                <li><a href="Index.html"><i class="material-icons left white-text text-darken-2">home</i><span class=" white-text text-darken-2">Inicio</a></li>
+                 <li><a href="pasteles.html"><i class="material-icons left  white-text text-darken-2 ">cake</i><span class=" white-text text-darken-2">Pasteles</a></li>
+                 <li><a href="postres.html"><i class="material-icons left white-text text-darken-2">card_giftcard</i><span class=" white-text text-darken-2">Postres</a></li>
+                 <li><a href="formulario.html"><i class="material-icons left white-text text-darken-2">contact_mail</i><span class=" white-text text-darken-2">Contacto</a></li> 
+             </ul>
+               
+                 
+                 
+          
+                     <style>
+                body{
+                  background-color:
+                }
+              
+                .progress{
+                  width:50%;
+                  margin:0 auto;
+                  margin-top:20%;
+                }
+                
+                @media only screen and (max-width:924px){
+                     .progress{
+                        width:70%;
+                        margin:0 auto;
+                        margin-top:60%;
+                      }
+                }
+             
+              </style>
+         
+  
+      
+      
+    <div class="parallax-container">
+      <div class="parallax"><img src="imagenes/todostomy6.jpg"div>
+        </div>
+      
+      
+      
+      
+  <div id="flayer">
+    <div id="slayer">
+
+<div class="container" id="content">
+  
+ 
+  <div class="row">
+    <div class="col l3 m3 s12"></div>
+    <div class="col l6 m6 s12">  
+    <section class="FormContact">
+            <form action="main.php" method="POST" class="form-contacto" name="form-contacto">
+              <div class="card-panel hoverable z-depth-5">
+                <h5 class="center">Contacto</h5>
+                <p class="center"> </p>
+                 <div class="input-field">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input type="text" name="nombre" required>
+                    <label>Nombre</label>
+                  </div>
+                  <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" name="email" class="validate" required>
+                    <label> email</label>
+                  </div>
+              <div class="input-field">
+          <i class="material-icons prefix">phone</i>
+          <input id="icon_telephone" type="tel" class="validate" name="telefono" required>
+          <label for="icon_telephone">Telefono</label>
+        </div> 
+        <div class="input-field">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="icon_prefix2" class="materialize-textarea" name="mensaje" required></textarea>
+          <label for="icon_prefix2">Escribe tu mensaje</label>
+        </div>
+				  <div class="input-field">
+          <i class="material-icons prefix">cake</i>
+          <textarea id="icon_prefix2" class="materialize-textarea" name="mensaje" required></textarea>
+          <label for="icon_prefix2">Personaliza tu pastel</label>
+        </div>
+
+                    
+                   
+				   <button class="btn  waves-light left col s12" type="submit" name="action" required id="enviar">Enviar</button>
+				  <br>
+				  <br>
+					
+				  
+                    <div class="cargando"><img src="imagenes/cargando.gif" alt=""></div>
+                    <div class="resultado"></div>
+                    <div class="clearfix"></div>
+               </div>
+            </form>
+            
+          </div>
+            <div class="col l3 m3 s12"></div>
+      
+          
+          
+        </div>
+    </div>
+     </div>
+          </div>
+                  </form>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+    
+      const login = document.querySelectorAll(".modal");
+      M.Modal.init(login,{
+        opacity:0.7,
+        dismissible:false
+      });
+      
+      document.querySelector("#content").style.display="none";
+      document.querySelector("#flayer").classList.add("progress");
+      document.querySelector("#slayer").classList.add("indeterminate");
+      
+      setTimeout(function(){
+          document.querySelector("#flayer").classList.remove("progress");
+          document.querySelector("#slayer").classList.remove("indeterminate");
+          document.querySelector("#content").style.display="block";
+      },333)
+    </script>
+   
+        <br>
+        <br>
+        <br>
+       
+        
+      </main>
+      
+        <footer class="page-footer black">
+         
+          <div class="container">
+            <div class="row">
+              <div class="col s8 m4">
+                <h5 class="white-text">Horarios </h5>
+                  <br>
+                  
+                <p class="white-text text-lighten-4" href="#!"><i class="icono far fa-clock"style="color: #ffcc80" ></i> &nbsp; Lunes a Domingo <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 8am a 7pm.</p>
+              </div>
+                <div class="col s8 m4">
+                <h5 class="white-text">Contacto</h5>
+                <ul>
+          
+                  <br>
+                  <li><a class="white-text text-lighten-3" href="#!"><i class="icono fas fa-map-marker-alt" style="color: #ffcc80" ></i>   &nbsp;  Coatzacolcos, Veracruz <br>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; Colonia Centro #3234</a></li>
+                    <br>
+                  <li><a class="white-text text-lighten-3" href="#!"><i class="icono fas fa-mobile-alt" style="color: #ffcc80" ></i> &nbsp; &nbsp; 9212223455</a></li>
+                    <br>
+                  <li><a class="white-text text-lighten-3" href=""><i class="icono far fa-envelope" style="color: #ffcc80" ></i>    &nbsp; kfdpasteleria@gmail.com</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">
+                    
+                  
+                </ul>
+              </div>
+                  
+                <div class="col s8 m4">
+                <h5 class="white-text">Redes sociales</h5>  
+                <ul>
+                     
+                   <div class="middle1">
+               <a class="btn1" href="https://es-la.facebook.com/PasteleriaTomyCoatza/">
+               <i class=" fab fa-facebook-f "></i>
+               </a>
+                 
+               <a class="btn1" href="#">
+              <i class="fab fa-whatsapp"></i>
+              </a>
+             
+               </div> 
+                </ul>
+              </div>
+                     
+                  
+            </div>
+          </div>
+          <div class="footer-copyright">
+
+            <div class="container">
+            © 2019 Copyright 
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+          </div>
+        </footer>
+        
+        
+              <style>
+    nav li a:hover{
+    background: red;
+}
+               ui li: hover{
+                   
+               }
+               
+               .header{
+                   width: 100%;
+                   height: 150px;
+                   padding: 2px 30px;
+                   
+               }
+               
+               body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+      
+             </style>  
+ <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, );
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  })  
+            
+            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script> 
+    
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, );
+  });
+     </script>  
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+</html>

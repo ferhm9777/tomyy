@@ -1,0 +1,12 @@
+.cargando {
+	display: none;
+	text-align: center;
+	width: 95%;
+}
+
+.resultado{
+	color: #000;
+	font-weight: 600;
+	text-align: center;
+	width: 95%;
+}
